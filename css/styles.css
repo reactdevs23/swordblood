@@ -1,0 +1,689 @@
+/* generel css */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+:root {
+  /* background-color */
+  --primary-bg: #050505;
+  --secondary-bg: #242424;
+  /* text-color */
+  --primary-color: #c9ab84;
+  --secondary-color: #ffffff;
+
+  /* font-family */
+  --primary-font: "Space Grotesk", sans-serif;
+}
+
+body,
+html {
+  font-family: var(--primary-font);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: var(--primary-bg);
+}
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.wrapper {
+  padding-top: 70px;
+}
+.rightside {
+  padding-left: calc(240px + 15px);
+  padding-right: 15px;
+}
+.image {
+  width: 100%;
+}
+.heading {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #c9ab84;
+}
+.title {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 125%;
+  letter-spacing: 1px;
+  color: #c9ab84;
+}
+
+.text {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+.subtext {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: 1px;
+  color: #c9ab84;
+}
+
+/* ===== start navbar css ===== */
+.header {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--secondary-bg);
+
+  padding-right: 15px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.logoContainerAndHamburger {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logoContainer {
+  background-color: var(--secondary-bg);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+}
+.logo {
+  width: 206.37px;
+}
+.hamburger i {
+  color: var(--primary-color);
+  font-size: 24px;
+  cursor: pointer;
+}
+.close {
+  color: var(--primary-color);
+  font-size: 32px;
+  display: none;
+  cursor: pointer;
+}
+.contactAddress {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 125%;
+  color: #242424;
+  mix-blend-mode: normal;
+  background: #c9ab84;
+  border-radius: 14px;
+  padding: 8px 18px;
+}
+.headerLogo {
+  display: none;
+}
+.blank {
+  display: none;
+}
+
+/* =====end navbar css ===== */
+
+/* ===== start sidebar css ===== */
+
+.sidebar {
+  width: 240px;
+  position: fixed;
+  top: 70px;
+  z-index: 2;
+  background-color: var(--secondary-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+  padding-bottom: 60px;
+}
+.navItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #141414;
+}
+.dropdownHeader .arrow {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.navItem {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 125%;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  padding: 20px 25px 20px 35px;
+  cursor: pointer;
+}
+.presale {
+  background-color: var(--primary-bg);
+}
+.dropdownItems {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow-y: hidden;
+  transition: height 0.3s ease;
+}
+.dropDownContainer:hover > .dropdownItems {
+  height: 136px;
+  transition: 0.5s ease;
+}
+.dropDownContainer:hover > .presaleDropDownItmes {
+  height: 98px;
+  transition: 0.5s ease;
+}
+.dropdownItems .dropdownItem {
+  border-bottom: 1px dashed var(--primary-color);
+}
+.dropdownItems .dropdownItem:first-child {
+  padding-top: 18px;
+}
+.dropdownItems .dropdownItem:last-child {
+  padding-bottom: 18px;
+  border: none;
+}
+
+.dropdownHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-bg);
+  padding-right: 25px;
+}
+.dropdownItems .navItem {
+  padding: 15px 0;
+  padding-left: 50px;
+}
+.quicklinksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 25px 25px 15px 35px;
+}
+.quichLinksHeader {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+.quicklinksContainer .link {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.3px;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.descriptionContainer .description {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 125%;
+  color: #ffffff;
+  padding: 6px 0;
+}
+.socialMediaContainer {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  border-top: 0.1px solid rgb(224, 224, 224, 0.6);
+}
+.allSocialMedia {
+  display: grid;
+  grid-template-columns: repeat(4, 21px);
+  gap: 15px 30px;
+}
+/* =====end sidebar css ===== */
+
+/* ===start footer styles  */
+.footer .quicklinksContainer {
+  display: none;
+}
+.footer .quichLinksHeader {
+  display: none;
+}
+.footer .descriptionContainer {
+  display: none;
+}
+.footer .socialMediaContainer {
+  display: none;
+}
+/* ====== end of footer styles ====== */
+
+/*====== home page =======*/
+
+/*======= start herosection ======= */
+.heroSection {
+  position: relative;
+  height: 314px;
+  margin-top: 30px;
+}
+.heroSection .image {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+.heroSection .connectWalletContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: #050505;
+  border: 1px solid var(--primary-color);
+  border-radius: 14px 14px 5px 5px;
+  width: 362px;
+}
+.heroSection .presaleWrapper {
+  padding: 17px;
+  padding-bottom: 0;
+}
+.heroSection .presaleImage {
+  width: 60.97px;
+}
+.heroSection .presaleAndText {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.heroSection .presaleTextAndAmount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.heroSection .amountAndText {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.heroSection .info {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 125%;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  padding: 22px 0;
+}
+.heroSection .progress {
+  background-color: #242424;
+  border-radius: 3px;
+  position: relative;
+
+  height: 12px;
+  width: 100%;
+}
+
+.heroSection .progress-done {
+  background: #c9ab84;
+
+  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+.heroSection .amountContainer {
+  padding: 16px 0;
+}
+.heroSection .amountTextAndAmountNumber {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 2px 0;
+}
+
+.heroSection .amountText {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 125%;
+  text-align: justify;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+.heroSection .amountNumber {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  text-align: justify;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+.heroSection .connectWallet {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  text-align: center;
+  color: #050505;
+  background: #c9ab84;
+  border-radius: 3px;
+  padding: 10.5px 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/*======= end herosection ======= */
+
+/*==== start what you get =======*/
+.what-you-get {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(361px, 1fr));
+  gap: 15px;
+  padding: 60px 0;
+}
+.imageAndtext {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: url("/images/home/Bg.png"), #050505;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  border: 1px solid #c9ab84;
+}
+
+/*==== end what you get ========*/
+
+/*=======start swordblood =======*/
+.swordblood .heading {
+  padding-bottom: 10px;
+}
+.swordblood .textContainer {
+  padding: 9px 0;
+}
+.swordblood .smallPresale {
+  width: 21px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.swordblood .text {
+  padding: 5px 0;
+}
+/*===== end swordblood =====*/
+
+/* ========= start contact us ============= */
+.contactusWrapper {
+  padding: 40px 0;
+}
+.contactus {
+  position: relative;
+  height: 277px;
+}
+.contactus .image {
+  height: 100%;
+}
+.contactus .contactmobileImage {
+  display: none;
+}
+.contactus .textWrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px 25px;
+}
+.contactus .textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.contactus .contactDetails {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ffffff;
+  max-width: 366px;
+}
+.contactus .contactButton {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 135%;
+  text-align: center;
+  color: #ffffff;
+  background: #050505;
+  border: 1px solid #c9ab84;
+  border-radius: 7px;
+  padding: 8px 40px;
+  margin-top: 10px;
+}
+/* end of contact us */
+
+/*============= start As seen on ========== */
+.asSeenOnWrapper {
+  padding: 40px 0;
+}
+.asSeenOnWrapper .heading {
+  padding-bottom: 30px;
+}
+.assSeenOn {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px 15px;
+}
+.seeonImage {
+  margin: 0 auto;
+}
+
+/*============ end ass seen on ============ */
+/* ======= adding video ======== */
+.videoContainer {
+  max-width: 746px;
+  margin: 30px auto;
+  width: 100%;
+  position: relative;
+  padding-bottom: 419px; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* ======= end of adding video ======= */
+
+/*======== start our facilities =======*/
+.ourfacilites {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 263px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.facilities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+  align-items: center;
+  gap: 15px;
+}
+.facilities .title {
+  font-size: 14px;
+}
+.facilities .imageAndtext {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: url("/images/home/Bg.png"), #050505;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  border: 1px solid #c9ab84;
+}
+/* ========= end of our facilities ====== */
+
+/* ======= our partner ======== */
+.ourParners {
+  padding: 50px 0px;
+}
+.ourParners .heading {
+  padding-bottom: 50px;
+}
+.partnerWrapper {
+  padding-bottom: 70px;
+}
+.partnerWrapper .textContainer {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding-bottom: 30px;
+}
+.partnerWrapper .box {
+  width: 11px;
+  height: 11px;
+  background-color: var(--primary-color);
+  display: none;
+}
+.partnerWrapper .text {
+  text-align: left;
+}
+.partnerWrapper .partners {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px 15px;
+}
+
+.partnerImage {
+  margin: 0 auto;
+}
+/* =====end of our partner ====== */
+
+/* ===== start tokenAllocation ===== */
+
+.tokenAllocationHeading {
+  padding: 40px 0;
+  text-align: left;
+}
+.tokenAllocationMobile {
+  display: none;
+}
+
+/* =====end token allocation===== */
+
+/* ======== start presale page ========*/
+
+/* =======end of presale page ======= */
+.howTobuyWrapper {
+  padding: 50px 0;
+}
+.howTobuyWrapper .heading {
+  padding-bottom: 40px;
+}
+.howToBuy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding: 20px 0;
+}
+.howToBuy .textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 361px;
+}
+
+.howToBuy .presaleHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.howToBuy .presaleIcon {
+  width: 28.74px;
+}
+.howToBuy .text {
+  text-align: left;
+}
+
+/* ======= start roadmap page ====== */
+
+.roadMapHeading {
+  padding: 40px 0;
+  text-align: left;
+}
+.mobileImage {
+  display: none;
+}
+
+/* ========== end of roadmap page ====== */

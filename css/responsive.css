@@ -1,0 +1,336 @@
+/* header */
+
+@media only screen and (max-width: 1440px) {
+  .contactAddress {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  /* as seen on */
+  .assSeenOn {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* facilities */
+  .ourfacilites {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+  .ourfacilites .halvdansQuestArt {
+    width: 263px;
+    margin: 0 auto;
+  }
+  /*our partners */
+  .partnerWrapper .partners {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  /* presale page */
+  .howToBuy {
+    gap: 30px;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  /*our partners */
+  .partnerWrapper .partners {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 991px) {
+  /* header */
+  .header {
+    padding-left: 15px;
+  }
+  .contactAddress {
+    display: none;
+  }
+  .headerLogo {
+    display: block;
+  }
+  .blank {
+    display: block;
+  }
+
+  /* sidebar */
+  .sidebar {
+    transform: translateX(-250px);
+    transition: 0.3s ease-in-out;
+    top: 70px;
+  }
+  .logoContainer {
+    display: none;
+  }
+  .showSidebar {
+    transform: translateX(0px);
+    transition: 0.3s ease-in-out;
+  }
+  .rightside {
+    padding: 0 15px;
+  }
+
+  .contactAddressContainer {
+    background: #c9ab84;
+    border-radius: 14px 14px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 5px 5px;
+  }
+  .contactAddressContainer .address {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 130%;
+    text-align: center;
+    color: #242424;
+    mix-blend-mode: normal;
+  }
+
+  .sidebar .quichLinksHeader {
+    display: none;
+  }
+  .sidebar .quicklinksContainer {
+    display: none;
+  }
+  .sidebar .socialMediaContainer {
+    display: none;
+  }
+  .sidebar .descriptionContainer {
+    display: none;
+  }
+
+  /* footer */
+  .footer .quichLinksHeader {
+    padding: 25px 12px 15px 12px;
+    display: block;
+  }
+  .footer .quicklinksContainer {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 12px;
+    padding: 25px 12px 15px 12px;
+  }
+  .footer .link {
+    font-size: 15px;
+  }
+
+  .footer .descriptionContainer {
+    padding: 15px 12px 15px 12px;
+    display: block;
+  }
+  .footer .socialMediaContainer {
+    display: flex;
+  }
+  .footer .allSocialMedia {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  /* roadmap and token allocation */
+  .mobileImage {
+    display: block;
+  }
+  .dekstopImage {
+    display: none;
+  }
+  /* heroSection */
+  .heroSection {
+    height: auto;
+
+    padding-bottom: 50px;
+  }
+  .heroSection .connectWalletContainer {
+    position: static;
+    width: 100%;
+  }
+  /* what you get */
+  .what-you-get {
+    padding: 20px 0;
+    padding-top: 0px;
+  }
+  /*our partners */
+  .partnerWrapper .partners {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media only screen and (max-width: 844px) {
+  /*our partners */
+  .partnerWrapper .partners {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media only screen and (max-width: 790px) {
+  /*our partners */
+  .partnerWrapper .partners {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* contact us */
+  .contactus .textWrapper {
+    grid-template-columns: 1fr;
+    top: 15px;
+    transform: translateY(0);
+  }
+  .contactus .contactButton {
+    align-self: flex-end;
+    margin-top: 35px;
+    padding: 10px 40px;
+  }
+  .contactus .contactdekstopImage {
+    display: none;
+  }
+  .contactus .contactmobileImage {
+    display: block;
+  }
+  .contactus .blanks {
+    display: none;
+  }
+  /* as seen on  */
+  .assSeenOn {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* video section */
+  .videoContainer {
+    padding-bottom: 56.25%;
+  }
+  /* presale page */
+  .howToBuy {
+    grid-template-columns: 1fr;
+    padding: 40px 0;
+  }
+  .howToBuy .image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .howToBuy .textContainer {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 25px;
+  }
+}
+@media only screen and (max-width: 635px) {
+  .partnerWrapper .partners {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+@media only screen and (max-width: 575px) {
+  /* ass seen on */
+  .assSeenOn {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .seeonImage {
+    width: 130px;
+  }
+  .seeonImage:nth-child(4) {
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  /* heroSection */
+
+  .heroSection {
+    height: auto;
+  }
+  .heroSection .connectWalletContainer {
+    position: static;
+    width: 100%;
+  }
+  .heroSection .mobileImage {
+    display: block;
+  }
+  .heroSection .dekstopImage {
+    display: none;
+  }
+  /* contact us */
+  .contactus .contactDetails {
+    font-size: 20px;
+  }
+  /* footer */
+  .footer .link {
+    font-size: 12px;
+  }
+  /* partners */
+  .partnerWrapper .box {
+    display: block;
+  }
+  /* presale page */
+  .howToBuy .textContainer {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .title {
+    font-size: 20px;
+  }
+  /* what you get*/
+  .what-you-get {
+    grid-template-columns: 1fr;
+  }
+  .imageAndtext {
+    padding-left: 5px;
+  }
+  /* footer */
+  .footer .link {
+    font-size: 11px;
+  }
+  .footer .description {
+    font-size: 11px;
+  }
+  /* as seen on */
+  .seeonImage {
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* herosection */
+  .heroSection .amountAndText {
+    font-size: 16px;
+  }
+  .heroSection .amountText {
+    font-size: 18px;
+  }
+  .heroSection .amountNumber {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* herosection */
+  .heroSection .amountAndText {
+    font-size: 12px;
+  }
+  .heroSection .amountText {
+    font-size: 16px;
+  }
+  .heroSection .amountNumber {
+    font-size: 16px;
+  }
+  .heroSection .connectWallet {
+    font-size: 16px;
+  }
+
+  /* footer */
+  .footer .link {
+    font-size: 11px;
+  }
+  .footer .description {
+    font-size: 11px;
+  }
+  .footer .allSocialMedia {
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  /* partner */
+  .partnerWrapper .partners {
+    gap: 30px 10px;
+  }
+}
