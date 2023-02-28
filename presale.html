@@ -232,9 +232,11 @@
                   <span class="amountText">You own </span>
                   <span class="amountNumber"> 0 SWDTKN </span>
                 </p>
+              
               </div>
             </div>
-            <button class="connectWallet">Connect Wallet</button>
+            <button id="connectWallet" class="connectWallet">Connect Wallet</button>
+           
           </div>
         </div>
         <!--start how to buy -->
@@ -383,6 +385,30 @@
       </div>
     </footer>
     <!-- end of footer -->
+
+
+    <!-- start Connect Wallet modal -->
+  <div id="connectWalletModal" class="modal">
+
+  <div class="modalWrapper">
+    
+    <img src="/images/home/presale.png" alt="#" class="modalPresaleIcon">
+    <p class="modalText">Connect the wallet.</p>
+    <div class="buttonContainer">
+      <a href="#" target="_blank" class="modalConnectButton" id="metamaskConnect">
+        <img src="/images/presale/metamask.png" alt="#" class="icon">
+      </a>
+      <a href="#" target="_blank" class="modalConnectButton" id="walletConnect">
+        <img src="/images/presale/walletConnect.png" alt="#" class="icon">
+        </a>
+        <p class="modalClose"><i class="fa-solid fa-xmark"></i></p>
+      </div>  
+      <p class="modalInfo">*Please note that, this action can not be undone once the wallet is authorize.</p>
+  </div>
+
+</div>
+    <div class="overlay"></div>
+    <!-- end of connectWallet modal modal -->
 
     <script src="/js/main.js"></script>
   </body>

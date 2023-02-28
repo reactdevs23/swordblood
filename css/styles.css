@@ -676,6 +676,86 @@ button {
   text-align: left;
 }
 
+/* ======= start modal ======= */
+#connectWalletModal {
+  display: none;
+}
+.modal {
+  position: fixed;
+  z-index: 7;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(presale-banner-2.jpg), #050505;
+  width: 469px;
+  margin: 0 auto;
+  border: 1px solid var(--primary-color);
+  border-radius: 14px;
+}
+.overlay {
+  position: fixed;
+  z-index: 6;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(25px);
+  display: none;
+}
+.modalWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  padding: 30px 20px;
+}
+.modalText {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+}
+.modal .buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.modalConnectButton {
+  background: #050505;
+  /* Gold */
+
+  border: 1px solid #c9ab84;
+  border-radius: 14px;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalClose {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+.modalInfo {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.83;
+}
 /* ======= start roadmap page ====== */
 
 .roadMapHeading {
