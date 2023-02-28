@@ -321,7 +321,7 @@ button {
   width: 362px;
 }
 .heroSection .presaleWrapper {
-  padding: 17px;
+  padding: 15px;
   padding-bottom: 0;
 }
 .heroSection .presaleImage {
@@ -357,7 +357,7 @@ button {
   text-align: center;
   color: #ffffff;
   mix-blend-mode: normal;
-  padding: 22px 0;
+  padding: 20px 0;
 }
 .heroSection .progress {
   background-color: #242424;
@@ -422,11 +422,28 @@ button {
   color: #050505;
   background: #c9ab84;
   border-radius: 3px;
-  padding: 10.5px 10px;
+  padding: 13px 10px;
   width: 100%;
   cursor: pointer;
 }
-
+.buyingMethod {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+}
+.buyingButton {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #050505;
+  background: #c9ab84;
+  border: 1px solid #000000;
+  border-radius: 14px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
 /*======= end herosection ======= */
 
 /*==== start what you get =======*/
@@ -692,6 +709,7 @@ button {
   border: 1px solid var(--primary-color);
   border-radius: 14px;
 }
+
 .overlay {
   position: fixed;
   z-index: 6;
@@ -737,6 +755,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .modalClose {
   position: absolute;
@@ -756,6 +775,166 @@ button {
   mix-blend-mode: normal;
   opacity: 0.83;
 }
+/* ==== end of modal ======= */
+
+/* ====start buying modal ======= */
+.modal .modalContent {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+  padding: 30px 20px;
+}
+.modalTitle {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+
+  text-align: left;
+  width: 100%;
+  color: #ffffff;
+}
+.modaltagline {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.83;
+}
+.modal .inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.6px solid #c9ab84;
+  border-radius: 17px;
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 25px;
+}
+.modal .input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.83;
+  padding: 4px 0px;
+}
+.modal .token {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.83;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.suggestionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 25px;
+}
+.suggestion {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.83;
+}
+.approveButton {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 130%;
+  text-align: center;
+  color: #050505;
+  background: var(--primary-color);
+  border-radius: 7px;
+  padding: 8px 30px;
+  width: 195px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* ====end buying modal ======= */
+/* buy with eth modal */
+#buyWithEthModal {
+  display: none;
+}
+
+/* === purchase modal */
+#purchaseModal {
+  display: none;
+}
+#purchaseModal .modalPresaleIcon {
+  width: 140px;
+  margin: 0 auto;
+}
+#purchaseModal .purchaseAmount {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  text-align: center;
+  color: #c9ab84;
+}
+#purchaseModal .successMessage {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #fff;
+}
+#purchaseModal .waitingMessage {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  text-align: center;
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.83;
+}
+/* ====end of purchase modal */
 /* ======= start roadmap page ====== */
 
 .roadMapHeading {

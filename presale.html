@@ -236,7 +236,13 @@
               </div>
             </div>
             <button id="connectWallet" class="connectWallet">Connect Wallet</button>
-           
+            <div class="buyingMethod">
+              <button class="buyingButton " id="buyWithEth">Buy with ETH</button>
+              <button class="buyingButton " id="buyWithUsdt">Buy with USDT</button>
+              <button class="buyingButton " id="buyWithUsdc">Buy with USDC</button>
+              <button class="buyingButton " id="buyWithDai">Buy with DAI</button>
+          
+            </div>
           </div>
         </div>
         <!--start how to buy -->
@@ -395,18 +401,75 @@
     <img src="/images/home/presale.png" alt="#" class="modalPresaleIcon">
     <p class="modalText">Connect the wallet.</p>
     <div class="buttonContainer">
-      <a href="#" target="_blank" class="modalConnectButton" id="metamaskConnect">
+      <button href="#" target="_blank" class="modalConnectButton" id="metamaskConnect">
         <img src="/images/presale/metamask.png" alt="#" class="icon">
-      </a>
-      <a href="#" target="_blank" class="modalConnectButton" id="walletConnect">
+      </button>
+      <button href="#" target="_blank" class="modalConnectButton" id="walletConnect">
         <img src="/images/presale/walletConnect.png" alt="#" class="icon">
-        </a>
-        <p class="modalClose"><i class="fa-solid fa-xmark"></i></p>
-      </div>  
+        </button>
+        <p  class="modalClose"><i class="fa-solid fa-xmark"></i></p>
+    </div>  
       <p class="modalInfo">*Please note that, this action can not be undone once the wallet is authorize.</p>
   </div>
 
-</div>
+  </div>
+<!-- end connect wallet modal -->
+
+
+<!--start buy with eth modal -->
+  <div id="buyWithEthModal" class="modal">
+
+
+  <div class="modalContent">
+    <p  class="modalClose" id="closeModal"><i class="fa-solid fa-xmark"></i></p> 
+    <p class="modalTitle">Buy SWDTKN with USDT</p>
+    <p class="modaltagline">Enter the amount of SWDTKN you wish to purchase. Click “Approve”</p>
+    <div class="inputContainer">
+      <input type="number" id="ethValue" class="input">
+      <p class="token">SWDTKN</p>
+    </div>
+    <div class="suggestionContainer">
+      <span class="suggestion">Pay: 20 USDT</span>
+      <span class="suggestion">Minimum: 1000 SWDTKN</span>
+    </div>
+    <button class="approveButton" id="ethApproveButton">Approve</button>
+     
+     
+  </div>
+
+  </div>
+<!-- end buy with eth modal -->
+
+
+<!--start buy with usdt modal -->
+<!-- end buy with usdt modal -->
+
+
+
+<!--start buy with usdc modal -->
+<!-- end buy with usdc modal -->
+
+
+<!--start buy with usdt dai -->
+<!-- end buy with usdt dai -->
+
+<!--start purchase Modal --> 
+<div id="purchaseModal" class="modal">
+
+  <div class="modalContent">
+      <p  class="modalClose"><i class="fa-solid fa-xmark"></i></p>
+    <img src="/images/home/presale.png" alt="#" class="modalPresaleIcon">
+   <div>
+     <p class="purchaseAmount">1000</p>
+    <p class="successMessage">SWDTKN purchased!</p>
+   </div>
+   
+      <p class="waitingMessage">Please wait for announcement about when you can claim your SWDTKN</p>
+  </div>
+
+  </div>
+<!-- end of purchase modal -->
+
     <div class="overlay"></div>
     <!-- end of connectWallet modal modal -->
 
