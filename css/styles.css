@@ -1166,3 +1166,36 @@ input[type="number"] {
 .privacy .padding {
   padding-bottom: 0px;
 }
+/* terms and condition */
+
+.termsAndCondition {
+  padding-top: 80px;
+}
+
+.termsAndCondition .heading {
+  padding: 20px 0;
+}
+
+.termsAndCondition .text {
+  padding: 8px 0;
+  text-align: left;
+  line-height: 150%;
+}
+
+.termsAndCondition li.text {
+  margin-left: 15px;
+}
+
+.termsAndCondition li.text::marker {
+  margin-left: 3px;
+}
+
+.termsAndCondition .title {
+  text-align: left;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.termsAndCondition .padding {
+  padding-bottom: 0px;
+}
