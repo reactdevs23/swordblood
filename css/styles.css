@@ -40,14 +40,14 @@ button {
 }
 
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
+  /* max-width: 1440px;
+  margin: 0 auto; */
 }
 .wrapper {
   padding-top: 70px;
 }
 .rightside {
-  padding-left: calc(240px + 15px);
+  padding-left: calc(265px + 25px);
   padding-right: 15px;
 }
 .image {
@@ -98,7 +98,7 @@ button {
   position: fixed;
   z-index: 5;
   top: 0;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   width: 100%;
   margin: 0 auto;
   background-color: var(--secondary-bg);
@@ -125,6 +125,9 @@ button {
 }
 .logo {
   width: 206.37px;
+}
+.hamburger {
+  display: none;
 }
 .hamburger i {
   color: var(--primary-color);
@@ -161,7 +164,7 @@ button {
 /* ===== start sidebar css ===== */
 
 .sidebar {
-  width: 240px;
+  width: 265px;
   position: fixed;
   top: 70px;
   z-index: 2;
@@ -191,7 +194,7 @@ button {
   line-height: 125%;
   letter-spacing: 0.3px;
   color: #ffffff;
-  padding: 20px 25px 20px 35px;
+  padding: 20px 25px 15px 35px;
   cursor: pointer;
 }
 .presale {
@@ -238,7 +241,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 25px 25px 15px 35px;
+  padding: 25px 15px 25px 15px;
 }
 .quichLinksHeader {
   font-family: "Space Grotesk";
@@ -259,12 +262,14 @@ button {
   color: var(--primary-color);
   text-decoration: underline;
 }
-
+.descriptionContainer {
+  padding-top: 8px;
+}
 .descriptionContainer .description {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 125%;
   color: #ffffff;
   padding: 6px 0;
@@ -318,10 +323,10 @@ button {
   background: #050505;
   border: 1px solid var(--primary-color);
   border-radius: 14px 14px 5px 5px;
-  width: 362px;
+  width: 32%;
 }
 .heroSection .presaleWrapper {
-  padding: 15px;
+  padding: 15px 25px;
   padding-bottom: 0;
 }
 .heroSection .presaleImage {
@@ -589,7 +594,7 @@ button {
 }
 .facilities {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 15px;
 }
@@ -606,6 +611,7 @@ button {
   background-repeat: no-repeat;
   border-radius: 14px;
   border: 1px solid #c9ab84;
+  padding-right: 8px;
 }
 /* ========= end of our facilities ====== */
 
@@ -633,6 +639,7 @@ button {
 }
 .partnerWrapper .text {
   text-align: left;
+  padding-left: 2%;
 }
 .partnerWrapper .partners {
   display: grid;

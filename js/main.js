@@ -62,12 +62,13 @@ metamaskConnect.addEventListener("click", showBuyingButton);
 walletConnect.addEventListener("click", showBuyingButton);
 
 //buywithbutton
-const buyWithEthButton = document.querySelector("#buyWithEth");
+
 const buyWithUsdtButton = document.querySelector("#buyWithUsdt");
 const buyWithUsdcButton = document.querySelector("#buyWithUsdc");
 const buyingButtonButton = document.querySelector("#buyWithDai");
 
 // buy with eth
+const buyWithEthButton = document.querySelector("#buyWithEth");
 const buyWithEthModal = document.querySelector("#buyWithEthModal");
 const ethValue = document.querySelector("#ethValue");
 const ethApproveButton = document.querySelector("#ethApproveButton");
