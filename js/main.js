@@ -1,3 +1,20 @@
+// language change dropdwon
+
+// Get the dropdown button and content
+var dropdown = document.querySelector(".languageChangingDropdown");
+var iconAndCountry = dropdown.querySelector(".iconAndCountry");
+var content = dropdown.querySelector(".dropdown-content");
+
+// Add a click event listener to the content links
+content.addEventListener("click", function (event) {
+  // Prevent the default link behavior
+  event.preventDefault();
+  // Get the selected language
+  var language = event.target.closest(".content").innerHTML;
+  // Change the button text to the selected language
+  iconAndCountry.innerHTML = language;
+});
+
 // sidebar showing
 const sidebar = document.querySelector(".sidebar");
 const hamburgerButton = document.querySelector(".hamburger");

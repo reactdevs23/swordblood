@@ -59,16 +59,21 @@
   /* header */
 
   .header {
-    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 90px 1fr 90px;
+    padding: 0 15px;
+    gap: 20px;
   }
   .hamburger {
-    display: none;
+    display: flex;
+    justify-content: flex-start;
   }
   .contactAddress {
     display: none;
   }
   .headerLogo {
     display: block;
+    margin: 0 auto;
   }
   .blank {
     display: block;
@@ -218,6 +223,25 @@
 }
 
 @media only screen and (max-width: 520px) {
+  /* header */
+
+  .header {
+    display: grid;
+    grid-template-columns: 20px 1fr 70px;
+    padding: 0 10px;
+    gap: 12px;
+  }
+  .languageChangingDropdown {
+    width: 70px;
+    padding: 5px 6px;
+  }
+  .languageChangingDropdown .dropbtn .languageAndCountryName {
+    gap: 10px;
+  }
+  .languageChangingDropdown .flag {
+    width: 12px;
+    height: 12px;
+  }
   /* sidebar */
   .sidebar .quichLinksHeader {
     display: none;
@@ -337,6 +361,10 @@
   }
 }
 @media only screen and (max-width: 360px) {
+  /* header */
+  .headerLogo {
+    width: 180px;
+  }
   /* herosection */
   .heroSection .amountAndText {
     font-size: 12px;
