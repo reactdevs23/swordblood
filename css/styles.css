@@ -321,6 +321,10 @@ button {
   height: 98px;
   transition: 0.5s ease;
 }
+.dropDownContainer:hover .arrow {
+  transform: rotate(-180deg);
+  transition: 0.5s ease;
+}
 .dropdownItems .dropdownItem {
   border-bottom: 1px dashed var(--primary-color);
 }
@@ -390,6 +394,9 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 21px);
   gap: 15px 30px;
+}
+.arrow {
+  transition: 0.5s ease;
 }
 /* =====end sidebar css ===== */
 
