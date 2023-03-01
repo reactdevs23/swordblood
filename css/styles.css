@@ -624,8 +624,11 @@ button {
 .swordblood .text {
   padding: 5px 0;
 }
-.swordblood .information .textContainer:not(:first-child) {
+.swordblood .information .textContainer {
   border-top: 1px dashed var(--primary-color);
+}
+.swordblood .information .noBorder {
+  border-top: 0;
 }
 /*===== end swordblood =====*/
 
