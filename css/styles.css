@@ -276,7 +276,7 @@ button {
   width: 265px;
   position: fixed;
   top: 70px;
-  z-index: 2;
+  z-index: 10;
   background-color: var(--secondary-bg);
   min-height: 100vh;
   display: flex;
