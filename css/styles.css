@@ -420,18 +420,20 @@ button {
 
 /*====== home page =======*/
 
-/*======= start herosection ======= */
-.heroSection {
+/*======= start banner ======= */
+.banner {
   position: relative;
+}
+.heroSection {
   height: 314px;
   margin-top: 30px;
 }
-.heroSection .image {
+.banner .image {
   height: 100%;
   object-fit: cover;
   border-radius: 14px;
 }
-.heroSection .connectWalletContainer {
+.banner .connectWalletContainer {
   position: absolute;
   right: 0;
   top: 0;
@@ -440,27 +442,31 @@ button {
   border: 1px solid var(--primary-color);
   border-radius: 14px;
   width: 33%;
+  height: 313px;
+  bottom: 0;
+  top: auto;
+  z-index: 1;
 }
-.heroSection .presaleWrapper {
+.banner .presaleWrapper {
   padding: 15px 25px;
   padding-bottom: 0;
 }
-.heroSection .presaleImage {
+.banner .presaleImage {
   width: 60.97px;
 }
-.heroSection .presaleAndText {
+.banner .presaleAndText {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.heroSection .presaleTextAndAmount {
+.banner .presaleTextAndAmount {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   gap: 8px;
 }
-.heroSection .amountAndText {
+.banner .amountAndText {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 700;
@@ -469,7 +475,7 @@ button {
   letter-spacing: 1px;
   color: #ffffff;
 }
-.heroSection .info {
+.banner .info {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 600;
@@ -480,7 +486,7 @@ button {
   mix-blend-mode: normal;
   padding: 20px 0;
 }
-.heroSection .progress {
+.banner .progress {
   background-color: #242424;
   border-radius: 3px;
   position: relative;
@@ -489,7 +495,7 @@ button {
   width: 100%;
 }
 
-.heroSection .progress-done {
+.banner .progress-done {
   background: #c9ab84;
 
   border-radius: 3px;
@@ -502,10 +508,10 @@ button {
   opacity: 0;
   transition: 1s ease 0.3s;
 }
-.heroSection .amountContainer {
+.banner .amountContainer {
   padding: 16px 0;
 }
-.heroSection .amountTextAndAmountNumber {
+.banner .amountTextAndAmountNumber {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -513,7 +519,7 @@ button {
   padding: 2px 0;
 }
 
-.heroSection .amountText {
+.banner .amountText {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 300;
@@ -523,7 +529,7 @@ button {
   color: #ffffff;
   mix-blend-mode: normal;
 }
-.heroSection .amountNumber {
+.banner .amountNumber {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 600;
@@ -533,7 +539,7 @@ button {
   color: #ffffff;
   mix-blend-mode: normal;
 }
-.heroSection .connectWallet {
+.banner .connectWallet {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 700;
@@ -565,7 +571,7 @@ button {
   padding: 2px 8px;
   cursor: pointer;
 }
-/*======= end herosection ======= */
+/*======= end banner ======= */
 
 /*==== start what you get =======*/
 .what-you-get {
@@ -590,6 +596,14 @@ button {
   justify-content: flex-start;
   align-items: center;
 }
+.swiper-pagination {
+  z-index: 5;
+  color: #c9ab84;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #c9ab84;
+}
+
 /*==== end what you get ========*/
 
 /*=======start swordblood =======*/
@@ -608,6 +622,9 @@ button {
 .swordblood .text {
   padding: 5px 0;
 }
+.swordblood .information .textContainer:not(:first-child) {
+  border-top: 1px dashed var(--primary-color);
+}
 /*===== end swordblood =====*/
 
 /* ========= start contact us ============= */
@@ -616,7 +633,7 @@ button {
 }
 .contactus {
   position: relative;
-  height: 277.94px;
+  height: 330px;
 }
 .contactus .image {
   height: 100%;
@@ -794,6 +811,7 @@ button {
 }
 .partnerWrapper .textContainer {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 3px;
   padding-bottom: 30px;
@@ -1118,3 +1136,31 @@ input[type="number"] {
 }
 
 /* ========== end of roadmap page ====== */
+
+/* ===== privacy page ========== */
+.privacy {
+  padding-top: 80px;
+}
+.privacy .heading {
+  padding: 20px 0;
+}
+
+.privacy .text {
+  padding: 15px 0;
+  text-align: left;
+  line-height: 150%;
+}
+.privacy li.text {
+  margin-left: 15px;
+}
+.privacy li.text::marker {
+  margin-left: 3px;
+}
+.privacy .title {
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.privacy .padding {
+  padding-bottom: 0px;
+}

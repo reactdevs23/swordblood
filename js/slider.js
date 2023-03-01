@@ -4,6 +4,9 @@ const swipers = new Swiper(".what-you-get", {
   loop: true,
   slidesPerView: 3,
   spaceBetween: 25,
+  autoplay: {
+    delay: 2000,
+  },
   breakpoints: {
     1380: {
       slidesPerView: 3,
@@ -53,6 +56,9 @@ if (window.matchMedia("(max-width: 1199px)").matches) {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 15,
+    autoplay: {
+      delay: 2000,
+    },
     breakpoints: {
       1199: {
         slidesPerView: 3,
@@ -96,6 +102,9 @@ if (window.matchMedia("(max-width: 1199px)").matches) {
     loop: true,
     slidesPerView: 5,
     spaceBetween: 15,
+    autoplay: {
+      delay: 2000,
+    },
     breakpoints: {
       767: {
         slidesPerView: 4,
@@ -126,3 +135,19 @@ if (window.matchMedia("(max-width: 1199px)").matches) {
     },
   });
 }
+const swiper = new Swiper(".banner", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});

@@ -24,7 +24,7 @@ const showSidebar = () => {
   sidebar.classList.add("showSidebar");
   if (window.innerWidth < 991) {
     hamburgerButton.style.display = "none";
-    closeButton.style.display = "block";
+    closeButton.style.display = "flex";
   }
 };
 const hideSidebar = () => {
