@@ -92,46 +92,6 @@
     mix-blend-mode: normal;
   }
 
-  .sidebar .quichLinksHeader {
-    display: none;
-  }
-  .sidebar .quicklinksContainer {
-    display: none;
-  }
-  .sidebar .socialMediaContainer {
-    display: none;
-  }
-  .sidebar .descriptionContainer {
-    display: none;
-  }
-
-  /* footer */
-  .footer .quichLinksHeader {
-    padding: 25px 12px 15px 12px;
-    display: block;
-  }
-  .footer .quicklinksContainer {
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    gap: 12px;
-    padding: 25px 12px 15px 12px;
-  }
-  .footer .link {
-    font-size: 15px;
-  }
-
-  .footer .descriptionContainer {
-    padding: 15px 12px 15px 12px;
-    display: block;
-  }
-  .footer .socialMediaContainer {
-    display: flex;
-  }
-  .footer .allSocialMedia {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-  }
   /* roadmap and token allocation */
   .mobileImage {
     display: block;
@@ -234,6 +194,20 @@
 }
 
 @media only screen and (max-width: 520px) {
+  /* sidebar */
+  .sidebar .quichLinksHeader {
+    display: none;
+  }
+  .sidebar .quicklinksContainer {
+    display: none;
+  }
+  .sidebar .socialMediaContainer {
+    display: none;
+  }
+  .sidebar .descriptionContainer {
+    display: none;
+  }
+
   /* heroSection */
 
   .heroSection {
@@ -253,10 +227,35 @@
   .contactus .contactDetails {
     font-size: 20px;
   }
+
   /* footer */
+  .footer .quichLinksHeader {
+    padding: 25px 12px 15px 12px;
+    display: block;
+  }
+  .footer .quicklinksContainer {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 12px;
+    padding: 25px 12px 15px 12px;
+  }
   .footer .link {
     font-size: 12px;
   }
+
+  .footer .descriptionContainer {
+    padding: 15px 12px 15px 12px;
+    display: block;
+  }
+  .footer .socialMediaContainer {
+    display: flex;
+  }
+  .footer .allSocialMedia {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
   /* partners */
   .partnerWrapper .box {
     display: block;

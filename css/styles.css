@@ -694,9 +694,7 @@ button {
 }
 
 /* ======= start modal ======= */
-#connectWalletModal {
-  display: none;
-}
+
 .modal {
   position: fixed;
   z-index: 7;
@@ -708,6 +706,7 @@ button {
   margin: 0 auto;
   border: 1px solid var(--primary-color);
   border-radius: 14px;
+  display: none;
 }
 
 .overlay {
@@ -759,6 +758,7 @@ button {
 }
 .modalClose {
   position: absolute;
+  z-index: 5;
   top: 15px;
   right: 15px;
   color: #fff;
@@ -892,14 +892,9 @@ input[type="number"] {
 
 /* ====end buying modal ======= */
 /* buy with eth modal */
-#buyWithEthModal {
-  display: none;
-}
 
 /* === purchase modal */
-.purchaseWithEthModal {
-  display: none;
-}
+
 .purchaseModal .modalPresaleIcon {
   width: 140px;
   margin: 0 auto;
@@ -934,7 +929,7 @@ input[type="number"] {
   mix-blend-mode: normal;
   opacity: 0.83;
 }
-.show {
+.showModal {
   display: block;
 }
 /* ====end of purchase modal */

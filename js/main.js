@@ -1,7 +1,6 @@
 // sidebar showing
 const sidebar = document.querySelector(".sidebar");
 const hamburgerButton = document.querySelector(".hamburger");
-
 const closeButton = document.querySelector(".close");
 
 const showSidebar = () => {
@@ -27,67 +26,69 @@ progress.style.opacity = 1;
 
 // connect wallet modal
 
+// modal close open function
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+
+const showAndCloseModal = (myModal) => {
+  myModal.style.display = "block";
+  overlay.style.display = "block";
+};
+
 const connectWallet = document.querySelector("#connectWallet");
 const connectWalletModal = document.querySelector("#connectWalletModal");
-const overlay = document.querySelector(".overlay");
-const modal = document.querySelector(".modal");
 const modalClose = document.querySelector("#closeModal");
-
 const metamaskConnect = document.querySelector("#metamaskConnect");
 const walletConnect = document.querySelector("#walletConnect");
 const buyingMethod = document.querySelector(".buyingMethod");
 
-const showConnectWalletModal = () => {
-  connectWalletModal.style.display = "block";
-  overlay.style.display = "block";
-};
-const hideConnectWalletModal = () => {
-  connectWalletModal.style.display = "none";
+const closeConnectWalletModal = () => {
+  modal.style.display = "none";
   overlay.style.display = "none";
 };
+modalClose.addEventListener("click", closeConnectWalletModal);
+
 const showBuyingButton = () => {
+  showAndCloseModal(connectWalletModal);
   buyingMethod.style.display = "grid";
   connectWallet.style.display = "none";
-  connectWalletModal.style.display = "none";
+  modal.style.display = "none";
   overlay.style.display = "none";
 };
-connectWallet.addEventListener("click", showConnectWalletModal);
-modalClose.addEventListener("click", hideConnectWalletModal);
+connectWallet.addEventListener("click", () => {
+  showAndCloseModal(connectWalletModal);
+});
 metamaskConnect.addEventListener("click", showBuyingButton);
 walletConnect.addEventListener("click", showBuyingButton);
 
-//buy with button
-const buyWithEth = document.querySelector("#buyWithEth");
-const buyWithUsdt = document.querySelector("#buyWithUsdt");
-const buyWithUsdc = document.querySelector("#buyWithUsdc");
-const buyingButton = document.querySelector("#buyWithDai");
+//buywithbutton
+const buyWithEthButton = document.querySelector("#buyWithEth");
+const buyWithUsdtButton = document.querySelector("#buyWithUsdt");
+const buyWithUsdcButton = document.querySelector("#buyWithUsdc");
+const buyingButtonButton = document.querySelector("#buyWithDai");
 
 // buy with eth
 const buyWithEthModal = document.querySelector("#buyWithEthModal");
 const ethValue = document.querySelector("#ethValue");
 const ethApproveButton = document.querySelector("#ethApproveButton");
+const buyWithEthModalClose = document.querySelector("#buyWithEthModalClose");
 const purchaseWithEthModal = document.querySelector("#purchaseWithEthModal");
-// const buyWithEthModal = document.querySelector("#buyWithEthModal");
-// const buyWithEthModal = document.querySelector("#buyWithEthModal");
-// const buyWithEthModal = document.querySelector("#buyWithEthModal");
-const buyWithEthFunction = () => {
-  buyWithEthModal.style.display = "block";
-  overlay.style.display = "block";
-};
-const closeBuyWithEthModal = () => {
+const purchaseWithEthModalClose = document.querySelector(
+  "#purchaseWithEthModalClose"
+);
+
+buyWithEthButton.addEventListener("click", () => {
+  showAndCloseModal(buyWithEthModal);
+});
+buyWithEthModalClose.addEventListener("click", () => {
   buyWithEthModal.style.display = "none";
-  overlay.style.display = "none";
-};
-const purchaseWithEth = () => {
+});
+ethApproveButton.addEventListener("click", () => {
+  buyWithEthModal.style.display = "none";
+
   purchaseWithEthModal.style.display = "block";
-  overlay.style.display = "block";
-};
-const closePurchaseWithEth = () => {
+});
+purchaseWithEthModalClose.addEventListener("click", () => {
   purchaseWithEthModal.style.display = "none";
   overlay.style.display = "none";
-};
-buyWithEth.addEventListener("click", buyWithEthFunction);
-ethApproveButton.addEventListener("click", closeBuyWithEthModal);
-ethApproveButton.addEventListener("click", purchaseWithEth);
-modalClose.addEventListener("click", closeBuyWithEthModal);
-modalClose.addEventListener("click", closePurchaseWithEth);
+});
