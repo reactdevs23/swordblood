@@ -587,7 +587,7 @@ button {
 }
 .swiper-slide {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 /*==== end what you get ========*/
