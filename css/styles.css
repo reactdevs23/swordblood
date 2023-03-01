@@ -540,12 +540,14 @@ button {
 /*======= end herosection ======= */
 
 /*==== start what you get =======*/
+
 .what-you-get {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(361px, 1fr));
   gap: 15px;
   padding: 60px 0;
 }
+
 .imageAndtext {
   display: flex;
   align-items: center;
@@ -556,6 +558,27 @@ button {
   background-repeat: no-repeat;
   border-radius: 14px;
   border: 1px solid #c9ab84;
+  min-width: 361px;
+} /*what will you get slider */
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: fit-content;
+  transition: transform 0.5s ease;
+  touch-action: pan-y;
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  width: 100%;
 }
 
 /*==== end what you get ========*/

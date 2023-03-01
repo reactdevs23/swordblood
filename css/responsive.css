@@ -323,9 +323,9 @@
     font-size: 20px;
   }
   /* what you get*/
-  .what-you-get {
+  /* .what-you-get {
     grid-template-columns: 1fr;
-  }
+  } */
   .imageAndtext {
     padding-left: 5px;
   }
