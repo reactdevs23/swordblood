@@ -42,8 +42,17 @@
     text-align: left;
     padding-left: 4%;
   }
+  /* slider */
+  .swiper-pagination {
+    margin-left: -18%;
+  }
 }
 
+@media only screen and (max-width: 1280px) {
+  .swiper-pagination {
+    margin-left: -20%;
+  }
+}
 @media only screen and (max-width: 1199px) {
   /* as seen on */
   .assSeenOn {
@@ -77,8 +86,16 @@
     gap: 30px;
     align-items: center;
   }
+  /* slider */
+  .swiper-pagination {
+    margin-left: -22%;
+  }
 }
-
+@media only screen and (max-width: 1040px) {
+  .swiper-pagination {
+    margin-left: -26%;
+  }
+}
 @media only screen and (max-width: 991px) {
   /*what will you get slider */
   .slider-container {
@@ -162,6 +179,11 @@
     color: #242424;
     mix-blend-mode: normal;
   }
+  /* contact us */
+  /* contact us */
+  .contactus {
+    height: 288px;
+  }
 
   /* roadmap and token allocation */
   .mobileImage {
@@ -210,6 +232,14 @@
   /* partner */
   .teamMembers {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* slider */
+  .swiper-pagination {
+    margin-left: 0%;
+    width: 100%;
+    display: flex;
+    display: none;
   }
 }
 

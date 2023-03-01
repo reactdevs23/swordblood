@@ -599,6 +599,9 @@ button {
 .swiper-pagination {
   z-index: 5;
   color: #c9ab84;
+  margin-left: 16%;
+  width: 100px;
+  display: block;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #c9ab84;
@@ -633,7 +636,6 @@ button {
 }
 .contactus {
   position: relative;
-  height: 330px;
 }
 .contactus .image {
   height: 100%;
