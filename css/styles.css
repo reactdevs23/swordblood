@@ -156,6 +156,9 @@ button {
   background: #c9ab84;
   border-radius: 14px;
   padding: 8px 18px;
+  height: 42px;
+  display: flex;
+  align-items: center;
 }
 .headerLogo {
   display: none;
@@ -168,16 +171,30 @@ button {
 .languageChangingDropdown {
   border: 0.5px solid #c9ab84;
   border-radius: 14px;
-  padding: 5px 12px;
+
   display: flex;
   align-items: center;
   position: relative;
   width: 90px;
+  height: 42px;
+  overflow: hidden;
 }
+.languageChangingDropdown:hover {
+  overflow: visible;
+  border-radius: 14px 14px 0 0;
+}
+
 /* Style the dropdown button */
 .languageChangingDropdown .dropbtn {
   border: none;
   cursor: pointer;
+  border-bottom: 0.5px solid transparent;
+  border-radius: 14px;
+  padding: 8px 12px;
+  height: 100%;
+}
+.languageChangingDropdown:hover .dropbtn {
+  border-bottom: 0.5px solid #c9ab84;
 }
 .languageChangingDropdown .dropbtn .languageAndCountryName {
   font-family: "Space Grotesk";
@@ -205,13 +222,14 @@ button {
 .languageChangingDropdown .dropdown-content {
   display: none;
   position: absolute;
-  top: 30px;
-  right: 0px;
+  top: 40px;
+  right: -1px;
   background-color: var(--secondary-bg);
-  min-width: 100%;
+  width: calc(100% + 2px);
   z-index: 1;
   border: 1px solid var(--primary-color);
-  border-radius: 10px;
+  border-top: none;
+  border-radius: 0 0 14px 14px;
 
   flex-direction: column;
   align-items: start;
@@ -401,7 +419,7 @@ button {
 .heroSection .image {
   height: 100%;
   object-fit: cover;
-  border-radius: 7px;
+  border-radius: 14px;
 }
 .heroSection .connectWalletContainer {
   position: absolute;
@@ -410,8 +428,8 @@ button {
   height: 100%;
   background: rgb(5, 5, 5, 0.85);
   border: 1px solid var(--primary-color);
-  border-radius: 14px 14px 5px 5px;
-  width: 32%;
+  border-radius: 14px;
+  width: 33%;
 }
 .heroSection .presaleWrapper {
   padding: 15px 25px;
@@ -513,8 +531,8 @@ button {
   line-height: 125%;
   text-align: center;
   color: #050505;
-  background: #c9ab84;
-  border-radius: 3px;
+  background: rgb(201, 171, 132, 0.85);
+  border-radius: 14px;
   padding: 13px 10px;
   width: 100%;
   cursor: pointer;
@@ -540,14 +558,12 @@ button {
 /*======= end herosection ======= */
 
 /*==== start what you get =======*/
-
 .what-you-get {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(361px, 1fr));
   gap: 15px;
   padding: 60px 0;
 }
-
 .imageAndtext {
   display: flex;
   align-items: center;
@@ -558,27 +574,6 @@ button {
   background-repeat: no-repeat;
   border-radius: 14px;
   border: 1px solid #c9ab84;
-  min-width: 361px;
-} /*what will you get slider */
-.slider-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.slider {
-  display: flex;
-  width: fit-content;
-  transition: transform 0.5s ease;
-  touch-action: pan-y;
-}
-
-.slides {
-  display: flex;
-}
-
-.slide {
-  width: 100%;
 }
 
 /*==== end what you get ========*/
@@ -607,7 +602,7 @@ button {
 }
 .contactus {
   position: relative;
-  height: 277px;
+  height: 277.94px;
 }
 .contactus .image {
   height: 100%;
@@ -1001,7 +996,7 @@ input[type="number"] {
   text-align: center;
   color: #050505;
   background: var(--primary-color);
-  border-radius: 7px;
+  border-radius: 14px;
   padding: 8px 30px;
   width: 195px;
   margin: 0 auto;
