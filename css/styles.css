@@ -408,7 +408,7 @@ button {
   right: 0;
   top: 0;
   height: 100%;
-  background: #050505;
+  background: rgb(5, 5, 5, 0.85);
   border: 1px solid var(--primary-color);
   border-radius: 14px 14px 5px 5px;
   width: 32%;

@@ -81,7 +81,7 @@
 
   /* sidebar */
   .sidebar {
-    transform: translateX(-250px);
+    transform: translateX(-265px);
     transition: 0.3s ease-in-out;
     top: 70px;
   }
@@ -144,7 +144,7 @@
     grid-template-columns: repeat(6, 1fr);
   }
 }
-@media only screen and (max-width: 844px) {
+@media only screen and (max-width: 944px) {
   /*our partners */
   .partnerWrapper .partners {
     grid-template-columns: repeat(5, 1fr);
