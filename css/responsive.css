@@ -298,7 +298,9 @@
   }
   .languageChangingDropdown {
     width: 70px;
-    padding: 5px 6px;
+  }
+  .languageChangingDropdown .dropbtn {
+    padding: 8px;
   }
   .languageChangingDropdown .dropbtn .languageAndCountryName {
     gap: 10px;
