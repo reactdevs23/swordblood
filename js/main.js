@@ -30,6 +30,7 @@ progress.style.opacity = 1;
 const connectWallet = document.querySelector("#connectWallet");
 const connectWalletModal = document.querySelector("#connectWalletModal");
 const overlay = document.querySelector(".overlay");
+const modal = document.querySelector(".modal");
 const modalClose = document.querySelector("#closeModal");
 
 const metamaskConnect = document.querySelector("#metamaskConnect");
@@ -65,6 +66,7 @@ const buyingButton = document.querySelector("#buyWithDai");
 const buyWithEthModal = document.querySelector("#buyWithEthModal");
 const ethValue = document.querySelector("#ethValue");
 const ethApproveButton = document.querySelector("#ethApproveButton");
+const purchaseWithEthModal = document.querySelector("#purchaseWithEthModal");
 // const buyWithEthModal = document.querySelector("#buyWithEthModal");
 // const buyWithEthModal = document.querySelector("#buyWithEthModal");
 // const buyWithEthModal = document.querySelector("#buyWithEthModal");
@@ -76,6 +78,16 @@ const closeBuyWithEthModal = () => {
   buyWithEthModal.style.display = "none";
   overlay.style.display = "none";
 };
+const purchaseWithEth = () => {
+  purchaseWithEthModal.style.display = "block";
+  overlay.style.display = "block";
+};
+const closePurchaseWithEth = () => {
+  purchaseWithEthModal.style.display = "none";
+  overlay.style.display = "none";
+};
 buyWithEth.addEventListener("click", buyWithEthFunction);
 ethApproveButton.addEventListener("click", closeBuyWithEthModal);
+ethApproveButton.addEventListener("click", purchaseWithEth);
 modalClose.addEventListener("click", closeBuyWithEthModal);
+modalClose.addEventListener("click", closePurchaseWithEth);

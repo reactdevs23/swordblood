@@ -407,7 +407,7 @@
       <button href="#" target="_blank" class="modalConnectButton" id="walletConnect">
         <img src="/images/presale/walletConnect.png" alt="#" class="icon">
         </button>
-        <p  class="modalClose"><i class="fa-solid fa-xmark"></i></p>
+        <p  class="modalClose" id="closeModal"><i class="fa-solid fa-xmark"></i></p>
     </div>  
       <p class="modalInfo">*Please note that, this action can not be undone once the wallet is authorize.</p>
   </div>
@@ -454,10 +454,10 @@
 <!-- end buy with usdt dai -->
 
 <!--start purchase Modal --> 
-<div id="purchaseModal" class="modal">
+<div id="purchaseWithEthModal" class="modal purchaseModal" style="display: none;">
 
   <div class="modalContent">
-      <p  class="modalClose"><i class="fa-solid fa-xmark"></i></p>
+      <p class="modalClose" id="closeModal modalClose"><i class="fa-solid fa-xmark"></i></p>
     <img src="/images/home/presale.png" alt="#" class="modalPresaleIcon">
    <div>
      <p class="purchaseAmount">1000</p>

@@ -897,14 +897,14 @@ input[type="number"] {
 }
 
 /* === purchase modal */
-#purchaseModal {
+.purchaseWithEthModal {
   display: none;
 }
-#purchaseModal .modalPresaleIcon {
+.purchaseModal .modalPresaleIcon {
   width: 140px;
   margin: 0 auto;
 }
-#purchaseModal .purchaseAmount {
+.purchaseModal .purchaseAmount {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 700;
@@ -913,7 +913,7 @@ input[type="number"] {
   text-align: center;
   color: #c9ab84;
 }
-#purchaseModal .successMessage {
+.purchaseModal .successMessage {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 700;
@@ -922,7 +922,7 @@ input[type="number"] {
   text-align: center;
   color: #fff;
 }
-#purchaseModal .waitingMessage {
+.purchaseModal .waitingMessage {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
@@ -933,6 +933,9 @@ input[type="number"] {
 
   mix-blend-mode: normal;
   opacity: 0.83;
+}
+.show {
+  display: block;
 }
 /* ====end of purchase modal */
 /* ======= start roadmap page ====== */
