@@ -559,9 +559,6 @@ button {
 
 /*==== start what you get =======*/
 .what-you-get {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(361px, 1fr));
-  gap: 15px;
   padding: 60px 0;
 }
 .imageAndtext {
@@ -570,12 +567,19 @@ button {
   gap: 5px;
   background: url("/images/home/Bg.png"), #050505;
   background-size: cover;
-
+  padding-right: 5px;
   background-repeat: no-repeat;
   border-radius: 14px;
   border: 1px solid #c9ab84;
 }
-
+.swiper {
+  width: 100%;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*==== end what you get ========*/
 
 /*=======start swordblood =======*/

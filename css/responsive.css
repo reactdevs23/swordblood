@@ -20,13 +20,20 @@
 @media only screen and (max-width: 1350px) {
   .facilities {
     grid-template-columns: repeat(2, 1fr);
+  } /*our partners */
+  .partnerWrapper .partners {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .partnerWrapper .text {
+    text-align: left;
+    padding-left: 4%;
   }
 }
 
 @media only screen and (max-width: 1199px) {
   /* as seen on */
   .assSeenOn {
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
   }
   /* facilities */
   .ourfacilites {
@@ -36,13 +43,17 @@
     gap: 20px;
     align-items: center;
   }
+  .facilities {
+    display: flex;
+  }
   .ourfacilites .halvdansQuestArt {
     width: 263px;
     margin: 0 auto;
   }
+
   /*our partners */
   .partnerWrapper .partners {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   /* presale page */
   .howToBuy {
@@ -50,12 +61,7 @@
     align-items: center;
   }
 }
-@media only screen and (max-width: 1030px) {
-  /*our partners */
-  .partnerWrapper .partners {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+
 @media only screen and (max-width: 991px) {
   /*what will you get slider */
   .slider-container {
@@ -115,7 +121,7 @@
     transition: 0.3s ease-in-out;
   }
   .rightside {
-    padding: 0 15px;
+    padding: 0 14px;
   }
 
   .contactAddressContainer {
@@ -182,23 +188,8 @@
     padding: 20px 0;
     padding-top: 0px;
   }
-  /*our partners */
-  .partnerWrapper .partners {
-    grid-template-columns: repeat(6, 1fr);
-  }
 }
-@media only screen and (max-width: 944px) {
-  /*our partners */
-  .partnerWrapper .partners {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-@media only screen and (max-width: 790px) {
-  /*our partners */
-  .partnerWrapper .partners {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+
 @media only screen and (max-width: 767px) {
   /* contact us */
   .contactus .textWrapper {
@@ -242,10 +233,19 @@
     max-width: 100%;
     padding: 0 25px;
   }
+  /* partner */
+  .partnerWrapper .text {
+    text-align: left;
+    padding-left: 3%;
+  }
 }
 @media only screen and (max-width: 635px) {
   .partnerWrapper .partners {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .partnerWrapper .text {
+    text-align: left;
+    padding-left: 4%;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -347,6 +347,10 @@
   /* partners */
   .partnerWrapper .box {
     display: block;
+  }
+  .partnerWrapper .text {
+    text-align: left;
+    padding-left: 1%;
   }
   /* presale page */
   .howToBuy .textContainer {
