@@ -111,9 +111,7 @@
     width: 100%;
   }
   /* header */
-  .languageChangingDropdown {
-    height: auto;
-  }
+
   .header {
     display: grid;
     grid-template-columns: 90px 1fr 90px;
