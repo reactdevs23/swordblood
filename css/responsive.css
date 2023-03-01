@@ -29,6 +29,9 @@
   .contactus {
     height: 277.94px;
   }
+  .information .textContainer br {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1350px) {
   .facilities {
