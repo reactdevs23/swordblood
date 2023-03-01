@@ -12,6 +12,10 @@
     padding: 15px;
     padding-bottom: 0px;
   }
+  /* team */
+  .teamMembers {
+    gap: 20px;
+  }
   /* sword of blood */
   .partnerWrapper .text {
     padding-left: 0;
@@ -20,7 +24,13 @@
 @media only screen and (max-width: 1350px) {
   .facilities {
     grid-template-columns: repeat(2, 1fr);
-  } /*our partners */
+  }
+  /* team */
+  .teamMembers {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /*our partners */
   .partnerWrapper .partners {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -50,7 +60,10 @@
     width: 263px;
     margin: 0 auto;
   }
-
+  /* team */
+  .teamMembers {
+    grid-template-columns: repeat(4, 1fr);
+  }
   /*our partners */
   .partnerWrapper .partners {
     grid-template-columns: repeat(3, 1fr);
@@ -188,6 +201,10 @@
     padding: 20px 0;
     padding-top: 0px;
   }
+  /* partner */
+  .teamMembers {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -262,6 +279,11 @@
   /* facilities */
   .facilities {
     grid-template-columns: 1fr;
+  }
+  /* partner */
+  .teamMembers {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
 
@@ -402,6 +424,9 @@
   }
   .modalConnectButton .icon {
     width: 100px;
+  }
+  br {
+    display: none;
   }
 }
 @media only screen and (max-width: 360px) {
