@@ -22,9 +22,9 @@
     gap: 20px;
   }
   /* sword of blood */
-  .partnerWrapper .text {
+  /* .partnerWrapper .text {
     padding-left: 0;
-  }
+  } */
   /* contact us */
   .contactus {
     height: 277.94px;
@@ -46,10 +46,10 @@
   .partnerWrapper .partners {
     grid-template-columns: repeat(4, 1fr);
   }
-  .partnerWrapper .text {
+  /* .partnerWrapper .text {
     text-align: left;
     padding-left: 4%;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1199px) {
@@ -276,19 +276,19 @@
     padding: 0 25px;
   }
   /* partner */
-  .partnerWrapper .text {
+  /* .partnerWrapper .text {
     text-align: left;
     padding-left: 3%;
-  }
+  } */
 }
 @media only screen and (max-width: 635px) {
   .partnerWrapper .partners {
     grid-template-columns: repeat(2, 1fr);
   }
-  .partnerWrapper .text {
+  /* .partnerWrapper .text {
     text-align: left;
     padding-left: 4%;
-  }
+  } */
 }
 @media only screen and (max-width: 575px) {
   /* ass seen on */
@@ -397,10 +397,10 @@
   .partnerWrapper .box {
     display: block;
   }
-  .partnerWrapper .text {
+  /* .partnerWrapper .text {
     text-align: left;
     padding-left: 1%;
-  }
+  } */
   /* presale page */
   .howToBuy .textContainer {
     padding: 0;
