@@ -638,6 +638,9 @@ button {
 }
 .contactus .image {
   height: 100%;
+  object-fit: cover;
+  border: 1px solid var(--primary-color);
+  border-radius: 18px;
 }
 .contactus .contactmobileImage {
   display: none;
