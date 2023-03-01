@@ -8,6 +8,11 @@
   .banner .connectWalletContainer {
     width: 362px;
   }
+  .swiper-pagination {
+    z-index: 5;
+    color: #c9ab84;
+    padding-right: 362px;
+  }
   .banner .presaleWrapper {
     padding: 15px;
     padding-bottom: 0px;
@@ -42,17 +47,8 @@
     text-align: left;
     padding-left: 4%;
   }
-  /* slider */
-  .swiper-pagination {
-    margin-left: -18%;
-  }
 }
 
-@media only screen and (max-width: 1280px) {
-  .swiper-pagination {
-    margin-left: -20%;
-  }
-}
 @media only screen and (max-width: 1199px) {
   /* as seen on */
   .assSeenOn {
@@ -87,15 +83,8 @@
     align-items: center;
   }
   /* slider */
-  .swiper-pagination {
-    margin-left: -22%;
-  }
 }
-@media only screen and (max-width: 1040px) {
-  .swiper-pagination {
-    margin-left: -26%;
-  }
-}
+
 @media only screen and (max-width: 991px) {
   /*what will you get slider */
   .slider-container {
@@ -236,9 +225,6 @@
 
   /* slider */
   .swiper-pagination {
-    margin-left: 0%;
-    width: 100%;
-    display: flex;
     display: none;
   }
 }

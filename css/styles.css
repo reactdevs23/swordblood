@@ -599,9 +599,7 @@ button {
 .swiper-pagination {
   z-index: 5;
   color: #c9ab84;
-  margin-left: 16%;
-  width: 100px;
-  display: block;
+  padding-right: 33%;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #c9ab84;
