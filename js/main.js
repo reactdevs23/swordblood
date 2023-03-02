@@ -8,9 +8,10 @@ var content = dropdown.querySelector(".dropdown-content");
 // Add a click event listener to the content links
 content.addEventListener("click", function (event) {
   // Prevent the default link behavior
-  event.preventDefault();
+
   // Get the selected language
   var language = event.target.closest(".content").innerHTML;
+  console.log(language);
   // Change the button text to the selected language
   iconAndCountry.innerHTML = language;
 });
