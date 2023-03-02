@@ -1,3 +1,12 @@
+// navButton active
+const navButtons = document.querySelectorAll(".nav-btn");
+
+navButtons.forEach((button) => {
+  if (button.href === window.location.href) {
+    button.classList.add("nav-btn-active");
+  }
+});
+
 // language change dropdwon
 
 // Get the dropdown button and content

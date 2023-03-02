@@ -297,6 +297,12 @@ button {
   background-color: #141414;
 }
 
+.nav-btn {
+  background-color: var(--primary-bg);
+}
+.nav-btn-active {
+  background: none;
+}
 .navItem {
   font-family: "Space Grotesk";
   font-style: normal;
@@ -308,9 +314,7 @@ button {
   padding: 20px 25px 15px 35px;
   cursor: pointer;
 }
-.presale {
-  background-color: var(--primary-bg);
-}
+
 .dropdownItems {
   display: flex;
   flex-direction: column;
@@ -345,7 +349,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primary-bg);
+
   padding-right: 25px;
 }
 .dropdownItems .navItem {
@@ -709,8 +713,10 @@ button {
   grid-template-columns: repeat(5, 1fr);
   gap: 25px 15px;
 }
-.seeonImage {
+.seeonImageContainer {
   margin: 0 auto;
+}
+.seeonImage {
 }
 
 /*============ end ass seen on ============ */
@@ -846,7 +852,9 @@ button {
   grid-template-columns: repeat(6, 1fr);
   gap: 25px 15px;
 }
-
+.partnerImageContainer {
+  margin: 0 auto;
+}
 .partnerImage {
   margin: 0 auto;
 }
