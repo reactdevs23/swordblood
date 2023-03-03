@@ -411,7 +411,8 @@ button {
   font-weight: 900;
 }
 .descriptionContainer {
-  padding-top: 8px;
+  
+  padding: 0px 15px 25px 15px;
 }
 .descriptionContainer .description {
   font-family: "Space Grotesk";
