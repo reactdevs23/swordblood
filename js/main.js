@@ -7,34 +7,6 @@ navButtons.forEach((button) => {
   }
 });
 
-// language change dropdwon
-
-// Get the dropdown button and content
-var dropdown = document.querySelector(".languageChangingDropdown");
-var iconAndCountry = dropdown.querySelector(".iconAndCountry");
-var content = dropdown.querySelector(".dropdown-content");
-var allContent = dropdown.querySelectorAll(".content");
-
-// Add a click event listener to the content links
-content.addEventListener("click", function (event) {
-  // Get the selected language
-  event.preventDefault();
-  var language = event.target.closest(".content").innerHTML;
-  const href = event.target.closest(".content").getAttribute("href"); // get the value of the href attribute
-  setTimeout(() => {
-    window.location.href = href; // navigate to the URL specified in the href attribute
-  }, 10);
-
-  allContent.forEach((link) => (link.style.display = "flex"));
-  event.target.closest(".content").style.display = "none";
-
-  // Change the button text to the selected language
-  iconAndCountry.innerHTML = language;
-  return false;
-});
-
-// Get all the links in the dropdown menu
-
 // sidebar showing
 const sidebar = document.querySelector(".sidebar");
 const hamburgerButton = document.querySelector(".hamburger");
