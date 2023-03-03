@@ -6,6 +6,15 @@ navButtons.forEach((button) => {
     button.classList.add("nav-btn-active");
   }
 });
+// quick link active
+const mySidebar = document.querySelector(".sidebar");
+const navLinks = document.querySelectorAll(".link");
+navLinks.forEach((link) => {
+  if (link.href === window.location.href) {
+    link.classList.add("active-quicklink");
+  }
+  console.log(link.href === window.location.href);
+});
 
 // sidebar showing
 const sidebar = document.querySelector(".sidebar");
@@ -62,6 +71,7 @@ const showBuyingButton = () => {
   buyingMethod.style.display = "grid";
   connectWallet.style.display = "none";
   modal.style.display = "none";
+
   overlay.style.display = "none";
 };
 connectWallet.addEventListener("click", () => {
@@ -74,7 +84,7 @@ walletConnect.addEventListener("click", showBuyingButton);
 
 const buyWithUsdtButton = document.querySelector("#buyWithUsdt");
 const buyWithUsdcButton = document.querySelector("#buyWithUsdc");
-const buyingButtonButton = document.querySelector("#buyWithDai");
+const buyWithDaiButton = document.querySelector("#buyWithDai");
 
 // buy with eth
 const buyWithEthButton = document.querySelector("#buyWithEth");
@@ -90,8 +100,19 @@ const purchaseWithEthModalClose = document.querySelector(
 buyWithEthButton.addEventListener("click", () => {
   showAndCloseModal(buyWithEthModal);
 });
+buyWithUsdtButton.addEventListener("click", () => {
+  showAndCloseModal(buyWithEthModal);
+});
+buyWithUsdcButton.addEventListener("click", () => {
+  showAndCloseModal(buyWithEthModal);
+});
+buyWithDaiButton.addEventListener("click", () => {
+  showAndCloseModal(buyWithEthModal);
+});
+
 buyWithEthModalClose.addEventListener("click", () => {
   buyWithEthModal.style.display = "none";
+  overlay.style.display = "none";
 });
 ethApproveButton.addEventListener("click", () => {
   buyWithEthModal.style.display = "none";
