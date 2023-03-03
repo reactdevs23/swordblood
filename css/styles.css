@@ -322,6 +322,7 @@ button {
   overflow-y: hidden;
   transition: height 0.3s ease;
 }
+
 .dropDownContainer:hover > .dropdownItems {
   height: 136px;
   transition: 0.5s ease;
@@ -329,6 +330,13 @@ button {
 .dropDownContainer:hover > .presaleDropDownItmes {
   height: 98px;
   transition: 0.5s ease;
+}
+.roadmapDropdownItems {
+  height: 98px;
+}
+.roadmapDropdownItems .roadmapDropdownItem {
+  background-color: var(--primary-color);
+  color: #000000;
 }
 .dropDownContainer:hover .arrow {
   transform: rotate(-180deg);
