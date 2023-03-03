@@ -303,6 +303,7 @@ button {
 .nav-btn-active {
   background: none;
 }
+
 .navItem {
   font-family: "Space Grotesk";
   font-style: normal;
@@ -314,7 +315,10 @@ button {
   padding: 20px 25px 15px 35px;
   cursor: pointer;
 }
-
+.presaleActive {
+  background-color: var(--primary-color);
+  color: #000000;
+}
 .dropdownItems {
   display: flex;
   flex-direction: column;
@@ -341,6 +345,10 @@ button {
 .dropDownContainer:hover .arrow {
   transform: rotate(-180deg);
   transition: 0.5s ease;
+}
+.roadmapArrowContainer .arrow {
+  transform: rotate(-180deg);
+  transition: none;
 }
 .dropdownItems .dropdownItem {
   border-bottom: 1px dashed var(--primary-color);
