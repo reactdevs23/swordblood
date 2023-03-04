@@ -443,6 +443,7 @@ button {
 /* ===start footer styles  */
 .footer {
   position: fixed;
+  z-index: 9;
   bottom: 0;
   width: 100%;
   background-color: var(--primary-bg);
