@@ -1024,8 +1024,9 @@ button {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
-  font-size: 8px;
-  line-height: 10px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 125%;
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.83;
