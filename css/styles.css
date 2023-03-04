@@ -279,16 +279,16 @@ button {
 
 .sidebar {
   width: 265px;
-  position: fixed;
+  position: absolute;
   top: 70px;
   z-index: 10;
   background-color: var(--secondary-bg);
-  min-height: 100vh;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 100px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
 }
 .navItems {
   display: flex;
