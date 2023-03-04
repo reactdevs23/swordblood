@@ -283,7 +283,9 @@ button {
   top: 70px;
   z-index: 10;
   background-color: var(--secondary-bg);
-  min-height: 700px;
+  height: 900px;
+  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -439,6 +441,12 @@ button {
 /* =====end sidebar css ===== */
 
 /* ===start footer styles  */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-bg);
+}
 .footer .quicklinksContainer {
   display: none;
 }
