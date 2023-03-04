@@ -442,7 +442,7 @@ button {
 
 /* ===start footer styles  */
 .footer {
-  position: fixed;
+  /* position: fixed; */
   z-index: 9;
   bottom: 0;
   width: 100%;
