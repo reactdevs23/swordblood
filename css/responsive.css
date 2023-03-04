@@ -216,6 +216,9 @@
   .banner .image {
     border-radius: 14px 14px 0 0;
   }
+  .banner .amountContainer {
+    padding: 12px 0;
+  }
   /* what you get */
   .what-you-get {
     padding: 20px 0;
@@ -444,15 +447,7 @@
     width: 150px;
   }
   /* herosection */
-  .banner .amountAndText {
-    font-size: 16px;
-  }
-  .banner .amountText {
-    font-size: 18px;
-  }
-  .banner .amountNumber {
-    font-size: 18px;
-  }
+
   /* modal */
   .modalConnectButton {
     width: 120px;
@@ -467,17 +462,34 @@
     display: none;
   }
 }
+@media only screen and (max-width: 380px) {
+  .banner .amountContainer {
+    padding: 16px 0;
+  }
+  .banner .amountAndText {
+    font-size: 16px;
+  }
+  .banner .amountText {
+    font-size: 18px;
+  }
+  .banner .amountNumber {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 360px) {
   /* header */
   .header {
     grid-template-columns: 60px 1fr 70px;
   }
   /* herosection */
+  .banner .amountContainer {
+    padding: 19px 0;
+  }
   .banner .amountAndText {
     font-size: 12px;
   }
   .banner .amountText {
-    font-size: 16px;
+    font-size: 12px;
   }
   .banner .amountNumber {
     font-size: 16px;
@@ -495,6 +507,11 @@
   }
   .footer .allSocialMedia {
     gap: 20px;
+  }
+}
+@media only screen and (max-width: 351px) {
+  .banner .amountContainer {
+    padding: 12px 0;
   }
 }
 @media only screen and (max-width: 330px) {

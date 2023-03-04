@@ -1,3 +1,4 @@
+// what you get slider
 const swipers = new Swiper(".what-you-get", {
   // Optional parameters
   direction: "horizontal",
@@ -49,7 +50,9 @@ const swipers = new Swiper(".what-you-get", {
     el: false,
   },
 });
+
 if (window.matchMedia("(max-width: 1199px)").matches) {
+  // myfacilities slider
   const swiper = new Swiper(".myfacilities", {
     // Optional parameters
     direction: "horizontal",
@@ -96,6 +99,7 @@ if (window.matchMedia("(max-width: 1199px)").matches) {
       el: false,
     },
   });
+  // .ass seen on slider
   const swiperss = new Swiper(".asseenonSwiper", {
     // Optional parameters
     direction: "horizontal",
@@ -135,6 +139,8 @@ if (window.matchMedia("(max-width: 1199px)").matches) {
     },
   });
 }
+
+// banner slider
 const swiper = new Swiper(".banner", {
   // Optional parameters
   direction: "horizontal",

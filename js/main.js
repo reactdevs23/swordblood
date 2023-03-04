@@ -1,11 +1,3 @@
-// navButton active
-const navButtons = document.querySelectorAll(".nav-btn");
-
-navButtons.forEach((button) => {
-  if (button.href === window.location.href) {
-    button.classList.add("nav-btn-active");
-  }
-});
 // quick link active
 const mySidebar = document.querySelector(".sidebar");
 const navLinks = document.querySelectorAll(".link");
@@ -65,7 +57,7 @@ const closeConnectWalletModal = () => {
   overlay.style.display = "none";
 };
 modalClose.addEventListener("click", closeConnectWalletModal);
-
+// show buying button
 const showBuyingButton = () => {
   showAndCloseModal(connectWalletModal);
   buyingMethod.style.display = "grid";
