@@ -358,7 +358,7 @@ button {
   transition: none;
 }
 .dropdownItems .dropdownItem {
-  border-bottom: 1px dashed var(--primary-color);
+  /* border-bottom: 1px dashed var(--primary-color); */
 }
 .dropdownItems .dropdownItem:first-child {
   padding-top: 18px;
