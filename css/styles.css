@@ -95,7 +95,7 @@ button {
 
 /* ===== start navbar css ===== */
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 5;
   top: 0;
   /* max-width: 1440px; */

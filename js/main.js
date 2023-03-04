@@ -22,7 +22,7 @@ const showSidebar = () => {
 };
 const hideSidebar = () => {
   sidebar.classList.remove("showSidebar");
-  hamburgerButton.style.display = "block";
+  hamburgerButton.style.display = "flex";
   closeButton.style.display = "none";
 };
 hamburgerButton.addEventListener("click", showSidebar);
