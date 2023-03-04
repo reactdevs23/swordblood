@@ -139,6 +139,7 @@
     transform: translateX(-265px);
     transition: 0.3s ease-in-out;
     top: 70px;
+    min-height: calc(100vh - 70px);
   }
   .logoContainer {
     display: none;
