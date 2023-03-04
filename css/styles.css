@@ -279,8 +279,8 @@ button {
 
 .sidebar {
   width: 265px;
-  position: absolute;
-  top: 70px;
+  position: fixed;
+  top: 0px;
   z-index: 10;
   background-color: var(--secondary-bg);
   height: 900px;
@@ -290,7 +290,7 @@ button {
   flex-direction: column;
   justify-content: space-between;
   gap: 100px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 .navItems {
   display: flex;
@@ -441,13 +441,13 @@ button {
 /* =====end sidebar css ===== */
 
 /* ===start footer styles  */
-.footer {
-  /* position: fixed; */
+/* .footer {
+  position: fixed;
   z-index: 9;
   bottom: 0;
   width: 100%;
   background-color: var(--primary-bg);
-}
+} */
 .footer .quicklinksContainer {
   display: none;
 }
